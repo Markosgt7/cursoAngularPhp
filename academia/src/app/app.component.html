@@ -1,11 +1,42 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
-  </mat-form-field>
+<mat-toolbar>
+  <span>My Academy</span>
+</mat-toolbar>
 
-  <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field>
-</form>
+<mat-sidenav-container class="example-container">
+  <!-- side nav-bar -->
+  <mat-sidenav mode="side" opened>
+    <img
+      class="avatar mat-elevation-z20"
+      src="https://images-platform.99static.com//_s7GVjl5jQXS5ZAdVu6ilER2-mA=/25x789:1999x2763/fit-in/500x500/99designs-contests-attachments/112/112044/attachment_112044713"
+      alt="imagen de logo"
+    />
+    <h4 class="name">Markos Sánchez</h4>
+    <p class="designation">Desarrollador Web</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span>Crear</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Persona</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>check</mat-icon>
+      <span>Interés</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button">
+      <mat-icon>logout</mat-icon>
+      <span>Salir</span>
+    </button>
+  </mat-sidenav>
+  <!-- area principal -->
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      Main Content
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
